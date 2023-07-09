@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oasis Gaming Studios</title>
+  <link rel="stylesheet" href="style/oasis.css">
+  <script src="oasis.js"></script>
+  <style>
+    /* Add your custom styles here */
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="path/to/placeholder-logo.png" alt="Company Logo">
+    </div>
+    <div class="title">
+      Oasis Gaming Studios
+    </div>
+    <nav>
+	<select onchange="redirectToPage(this.value)">
+  <option value="">Select a page</option>
+  <option value="Home.html">Home</option>
+  <option value="Oasis.html">Games</option>
+  <option value="Community.html">Community Engagement</option>
+   <option value="Careers.html">Careers</option>
+</select>
+
+<script>
+  function redirectToPage(url) {
+    if (url !== "") {
+      window.location.href = url;
+    }
+  }
+  </script>
+    </nav>
+  </header>
+
+  <!-- Community Engagement Section -->
+  <section class="community-engagement-section">
+    <h2>Community Engagement</h2>
+    <h3>Upcoming Events</h3>
+    <ul>
+      <li>
+        <h4>Q&A Session with Game Developers</h4>
+        <p>Date: [Insert Date]</p>
+        <p>Join us for an interactive Q&A session with our game developers. Get insights into the development process, ask questions, and share your ideas!</p>
+      </li>
+      <li>
+        <h4>Game Night: Multiplayer Madness</h4>
+        <p>Date: [Insert Date]</p>
+        <p>Join our community for an exciting game night! Compete with fellow players, form teams, and experience the thrill of multiplayer gaming.</p>
+      </li>
+      <li>
+        <h4>Movie Night: Gaming-themed Films</h4>
+        <p>Date: [Insert Date]</p>
+        <p>Grab your popcorn and join us for a movie night! We'll be screening gaming-themed films that are sure to entertain and inspire.</p>
+      </li>
+      <!-- Add more upcoming events here -->
+    </ul>
+
+    <h3>Community Forums</h3>
+    <p>Engage with other players, share your experiences, and discuss all things gaming in our vibrant community forums. Join the conversation now!</p>
+
+    <h3>Contests and Giveaways</h3>
+    <ul>
+      <li>
+        <h4>Monthly Giveaway: Exclusive In-Game Items</h4>
+        <p>Enter for a chance to win exclusive in-game items for your favorite Oasis Gaming Studios games. Stay tuned for details on our social media channels!</p>
+      </li>
+      <li>
+        <h4>Community Art Contest</h4>
+        <p>Showcase your artistic skills! Participate in our community art contest and stand a chance to win amazing prizes.</p>
+      </li>
+      <!-- Add more giveaways here -->
+    </ul>
+
+    <h3>Developer Blogs</h3>
+    <p>Get behind-the-scenes insights into our game development process, upcoming features, and the latest news through our developer blogs. Dive into the world of game development with us!</p>
+
+    <h3>Social Media</h3>
+    <p>Connect with us on social media to stay updated on all things Oasis Gaming Studios. Follow us on Facebook, Twitter, Instagram, YouTube, and Twitch for news, updates, and live streams.</p>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <p>&copy; 2023 Oasis Gaming Studios. All rights reserved.</p>
+      <nav>
+        <a href="#">Privacy Policy</a>
+        <a href="#">Terms of Service</a>
+      </nav>
+    </div>
+  </footer>
+</body>
+</html>

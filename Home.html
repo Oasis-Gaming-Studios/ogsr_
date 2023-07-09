@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oasis Gaming Studios</title>
+  <link rel="stylesheet" href="style/oasis.css">
+  <script src="oasis.js"></script>
+  <style>
+    /* Add previous CSS styles for the slideshow, header, overview section, slogan, and calendar section */
+
+    .promotion {
+      margin: 0 auto;
+      max-width: 300px;
+      text-align: center;
+    }
+
+    .promotion img {
+      width: 100%;
+    }
+
+    .promotion-info {
+      text-align: center;
+    }
+
+    /* Add styles for the calendar section */
+    .calendar-section {
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .calendar-title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .calendar-event {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .event-date {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    .event-info {
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="path/to/placeholder-logo.png" alt="Company Logo">
+    </div>
+    <div class="title">
+      Oasis Gaming Studios
+    </div>
+   <nav>
+	<select onchange="redirectToPage(this.value)">
+  <option value="">Select a page</option>
+  <option value="Home.html">Home</option>
+  <option value="Oasis.html">Games</option>
+  <option value="Community.html">Community Engagement</option>
+   <option value="Careers.html">Careers</option>
+</select>
+
+<script>
+  function redirectToPage(url) {
+    if (url !== "") {
+      window.location.href = url;
+    }
+  }
+  </script>
+    </nav>
+  </header>
+
+  <div class="slideshow-container">
+  <div class="center-image">
+    <div class="mySlides fade">
+      <img src="https://i.gyazo.com/929e0dd4c224333fa56a8e2a30583559.png">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="https://i.gyazo.com/929e0dd4c224333fa56a8e2a30583559.png">
+    </div>
+
+    <div class="mySlides fade">
+      <img src="https://i.gyazo.com/929e0dd4c224333fa56a8e2a30583559.png">
+    </div>
+
+  </div>
+  </div>
+  <br>
+  <div style="text-align: center">
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+    <span class="dot"></span> 
+  </div>
+
+  <div class="slogan">
+    <p>Discover the Oasis of Gaming</p>
+  </div>
+
+  <div class="overview-section">
+    <h3>Explore Our Gaming Universe</h3>
+    <div class="game-card">
+      <img src="path/to/game-image1.png" alt="Game 1">
+      <div class="game-info">
+        <h4>Latest Release: Game 1</h4>
+        <p>Description of the latest game release.</p>
+        <a href="https://www.roblox.com/games/12947370501/Lobby" class="btn">Play Now</a>
+      </div>
+    </div>
+    <div class="game-card">
+      <img src="path/to/game-image2.png" alt="Game 2">
+      <div class="game-info">
+        <h4>Upcoming Release: Game 2</h4>
+        <p>Description of the upcoming game release.</p>
+        <a href="#" class="btn">Learn More</a>
+      </div>
+    </div>
+    <div class="promotion">
+      <img src="path/to/promotion-image.png" alt="Special Promotion">
+      <div class="promotion-info">
+        <h4>Special Promotion</h4>
+        <p>Description of the special promotion or event.</p>
+        <a href="#" class="btn">Get Offer</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="calendar-section">
+    <h3 class="calendar-title">Upcoming Events</h3>
+    <div class="calendar-event">
+      <span class="event-date">Jul 16</span>
+      <span class="event-info">New Game Release</span>
+    </div>
+    <div class="calendar-event">
+      <span class="event-date">Jul 23</span>
+      <span class="event-info">Gaming Tournament</span>
+    </div>
+    <div class="calendar-event">
+      <span class="event-date">Jul 30</span>
+      <span class="event-info">Special Event</span>
+    </div>
+    <div class="calendar-event">
+      <span class="event-date">Aug 6</span>
+      <span class="event-info">Exclusive Preview</span>
+    </div>
+  </div>
+
+  <script>
+    let slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {
+        slideIndex = 1;
+      }    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex - 1].style.display = "block";  
+      dots[slideIndex - 1].className += " active";
+      setTimeout(showSlides, 10000); // Change image every 15 seconds
+    }
+  </script>
+</body>
+</html>

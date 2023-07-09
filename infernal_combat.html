@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oasis Gaming Studios</title>
+  <link rel="stylesheet" href="style/oasis.css">
+  <script src=".js"></script>
+</head>
+<body>
+  <header>
+    <h1>Oasis Gaming Studios</h1>
+      <nav>
+	<select onchange="redirectToPage(this.value)">
+  <option value="">Select a page</option>
+  <option value="Home.html">Home</option>
+  <option value="Oasis.html">Games</option>
+  <option value="Community.html">Community Engagement</option>
+   <option value="Careers.html">Careers</option>
+</select>
+
+<script>
+  function redirectToPage(url) {
+    if (url !== "") {
+      window.location.href = url;
+    }
+  }
+  </script>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Infernal Combat</h2>
+      <p>Description of the game goes here.</p>
+      <p>Genre: <em>Action</em></p>
+      <p><a href="https://www.roblox.com/games/12947370501/Lobby">Play Infernal Combat</a></p>
+    </section>
+    <section>
+      <h2>Maps/Areas</h2>
+      <ul>
+        <li>Map/Area 1</li>
+        <li>Map/Area 2</li>
+        <li>Map/Area 3</li>
+        <!-- Add more map/area entries here -->
+      </ul>
+    </section>
+    <section>
+      <h2>Products</h2>
+      <p>Browse the available products for Infernal Combat <a href="products.html">here</a>.</p>
+    </section>
+    <section>
+      <h2>Weapon Classes</h2>
+      <p>Learn more about the different weapon classes in Infernal Combat <a href="IC_Weapon_Classes.html">here</a>.</p>
+    </section>
+    <section>
+      <h2>Updates</h2>
+      <p>Stay up to date with the latest updates in Infernal Combat.</p>
+      <ul>
+        <li>
+          <h3>Update 1</h3>
+          <p>Description of Update 1 goes here.</p>
+        </li>
+        <li>
+          <h3>Update 2</h3>
+          <p>Description of Update 2 goes here.</p>
+        </li>
+        <!-- Add more update entries here -->
+      </ul>
+    </section>
+    <section>
+      <h2>Images</h2>
+      <img src="image1.jpg" alt="Infernal Combat Screenshot 1">
+      <img src="image2.jpg" alt="Infernal Combat Screenshot 2">
+      <!-- Add more images as needed -->
+    </section>
+    <!-- Add more sections as needed -->
+  </main>
+</body>
+</html>

@@ -1,0 +1,197 @@
+ <style>
+    /* CSS styles go here */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
+    
+    nav {
+      font-size: 18px;
+      margin-left: 10px; /* Adjust the value as desired */
+    }
+    
+    nav a {
+      color: #fff;
+      text-decoration: none;
+    }
+    
+    nav a:not(:last-child) {
+      margin-right: 10px; /* Adjust the value as desired */
+    }
+    
+    nav a:hover {
+      text-decoration: underline;
+    }
+    
+    main {
+      padding: 20px;
+    }
+    
+    .game-card {
+      background-color: #f4f4f4;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 20px;
+      display: flex;
+      flex-direction: row;
+    }
+    
+    .game-card img {
+      width: 150px;
+      height: 150px;
+      border-radius: 5px;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+    
+    .game-card .game-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    
+    .game-card h2 {
+      font-size: 18px;
+      margin: 0;
+    }
+    
+    .game-card p {
+      font-size: 14px;
+      margin-top: 10px;
+    }
+    
+    .game-card:nth-child(even) {
+      flex-direction: row-reverse;
+    }
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+    /* Add previous CSS styles for the slideshow, header, and overview section */
+
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+      margin: auto;
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    /* Add additional styles for the slogan */
+    .slogan {
+      text-align: center;
+      margin-top: 20px;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .promotion {
+      margin: 0 auto;
+      max-width: 300px;
+    }
+
+    .promotion img {
+      width: 100%;
+    }
+	nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+select {
+  padding: 8px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Optional: Add styles to the selected option */
+select option:checked {
+  font-weight: bold;
+}
+center-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+  </style>

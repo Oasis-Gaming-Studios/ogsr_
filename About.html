@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Oasis Gaming Studios</title>
+  <link rel="stylesheet" href="style/oasis.css">
+  <script src="oasis.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+  <style>
+    /* Add CSS styles for the header, About Us section, and social media integration */
+
+    header {
+      background-color: #333;
+      color: white;
+      padding: 20px;
+    }
+
+    .logo {
+      display: inline-block;
+      margin-right: 20px;
+    }
+
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    nav {
+      display: inline-block;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-right: 10px;
+    }
+
+    .about-section {
+      max-width: 800px;
+      margin: 50px auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+      border-radius: 10px;
+    }
+
+    .about-section h2 {
+      font-size: 28px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .about-section p {
+      line-height: 1.5;
+      margin-bottom: 15px;
+    }
+
+    .team-section {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .team-member {
+      display: inline-block;
+      margin: 20px;
+    }
+
+    .team-member img {
+      width: 150px;
+      border-radius: 50%;
+    }
+
+    .team-member-name {
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .social-media-section {
+      margin-top: 50px;
+      text-align: center;
+    }
+
+    .social-media-section a {
+      display: inline-block;
+      margin: 10px;
+      font-size: 24px;
+      color: #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="path/to/placeholder-logo.png" alt="Company Logo">
+    </div>
+    <div class="title">
+      Oasis Gaming Studios
+    </div>
+   <nav>
+	<select onchange="redirectToPage(this.value)">
+  <option value="">Select a page</option>
+  <option value="Home.html">Home</option>
+  <option value="Oasis.html">Games</option>
+  <option value="Community.html">Community Engagement</option>
+   <option value="Careers.html">Careers</option>
+</select>
+
+<script>
+  function redirectToPage(url) {
+    if (url !== "") {
+      window.location.href = url;
+    }
+  }
+  </script>
+    </nav>
+  </header>
+
+  <section class="about-section">
+    <h2>About Oasis Gaming Studios</h2>
+    <p>Welcome to Oasis Gaming Studios, a leading gaming company dedicated to creating immersive gaming experiences for players worldwide. We are passionate about delivering high-quality games that captivate and inspire players of all ages.</p>
+    <p>At Oasis Gaming Studios, we believe in the power of gaming to bring people together, foster creativity, and provide an escape into exciting virtual worlds. With a team of talented developers, artists, and game designers, we strive to push the boundaries of gaming innovation and deliver memorable experiences.</p>
+    <p>Our mission is to create games that entertain, challenge, and leave a lasting impression on players. We are committed to crafting unique gameplay mechanics, stunning visuals, and engaging storylines that keep players coming back for more.</p>
+    <p>Join us on this thrilling gaming journey and experience the Oasis difference. Explore our diverse range of games, connect with fellow gamers in our vibrant community, and stay tuned for exciting updates, events, and new releases.</p>
+  </section>
+
+  <section class="team-section">
+    <h2>Meet Our Team</h2>
+    <div class="team-member">
+      <img src="path/to/team-member1.png" alt="Team Member 1">
+      <div class="team-member-name">TLD07</div>
+      <div class="team-member-role">Founder/CEO</div>
+    </div>
+    <div class="team-member">
+      <img src="path/to/team-member2.png" alt="Team Member 2">
+      <div class="team-member-name">Derp</div>
+      <div class="team-member-role">Co-Founder/CCO</div>
+    </div>
+	<div class="team-member">
+      <img src="path/to/team-member3.png" alt="Team Member 3">
+      <div class="team-member-name">Rose</div>
+      <div class="team-member-role">Co-Founder</div>
+    </div>
+    <div class="team-member">
+      <img src="path/to/team-member3.png" alt="Team Member 3">
+      <div class="team-member-name">Bellaouzo</div>
+      <div class="team-member-role">Back End Scripter</div>
+    </div>
+	<div class="team-member">
+      <img src="path/to/team-member3.png" alt="Team Member 3">
+      <div class="team-member-name">Mullet</div>
+      <div class="team-member-role">3D Modeler</div>
+    </div>
+  </section>
+
+  <section class="social-media-section">
+    <h2>Connect with Us</h2>
+    <a href="https://www.facebook.com/oasisgaming" target="_blank"><i class="fab fa-facebook"></i></a>
+    <a href="https://twitter.com/oasisgaming" target="_blank"><i class="fab fa-twitter"></i></a>
+    <a href="https://www.instagram.com/oasisgaming" target="_blank"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.youtube.com/oasisgaming" target="_blank"><i class="fab fa-youtube"></i></a>
+    <a href="https://www.twitch.tv/oasisgaming" target="_blank"><i class="fab fa-twitch"></i></a>
+  </section>
+
+</body>
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oasis Gaming Studios</title>
+  <link rel="stylesheet" href="style/oasis.css">
+  <script src=".js"></script>
+</head>
+<body>
+  <header>
+    <h1>Oasis Gaming Studios</h1>
+    <nav>
+	<select onchange="redirectToPage(this.value)">
+  <option value="">Select a page</option>
+  <option value="Home.html">Home</option>
+  <option value="Oasis.html">Games</option>
+  <option value="Community.html">Community Engagement</option>
+   <option value="Careers.html">Careers</option>
+</select>
+
+<script>
+  function redirectToPage(url) {
+    if (url !== "") {
+      window.location.href = url;
+    }
+  }
+  </script>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <h2>Weapon Classes</h2>
+      <div class="weapon-class">
+        <img src="katana.jpg" alt="Katana">
+        <h3>Katanas</h3>
+        <p>Brief description of Katanas.</p>
+        <a href="katanas.html">Click here to view weapons</a>
+      </div>
+      <div class="weapon-class">
+        <img src="naginata.jpg" alt="Naginata">
+        <h3>Naginatas</h3>
+        <p>Brief description of Naginatas.</p>
+        <a href="naginatas.html">Click here to view weapons</a>
+      </div>
+      <div class="weapon-class">
+        <img src="scythe.jpg" alt="Scythe">
+        <h3>Scythe</h3>
+        <p>Brief description of Scythe.</p>
+        <a href="scythe.html">Click here to view weapons</a>
+      </div>
+      <div class="weapon-class">
+        <img src="battle_axe.jpg" alt="Battle Axe/Hammer">
+        <h3>Battle Axes/Hammers (Blunt)</h3>
+        <p>Brief description of Battle Axes/Hammers.</p>
+        <a href="battle_axes_hammers.html">Click here to view weapons</a>
+      </div>
+      <div class="weapon-class">
+        <img src="tanto.jpg" alt="Tanto">
+        <h3>Tantos</h3>
+        <p>Brief description of Tantos.</p>
+        <a href="tantos.html">Click here to view weapons</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Oasis Gaming Studios</title>
+  <link rel="stylesheet" href="style/oasis.css">
+  <style>
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: 10px;
+    }
+    .grid-item {
+      position: relative;
+      text-align: center;
+      background-color: #f2f2f2;
+      padding: 10px;
+      border-radius: 5px;
+    }
+    .grid-item img {
+      width: 100%;
+      max-width: 200px;
+    }
+    .grid-item .overlay {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      z-index: 1;
+    }
+    .grid-item:hover .overlay {
+      display: block;
+    }
+    .grid-item .overlay h3 {
+      margin-top: 0;
+    }
+  </style>
+  <script src=".js"></script>
+</head>
+<body>
+  <header>
+    <h1>Oasis Gaming Studios</h1>
+      <nav>
+	<select onchange="redirectToPage(this.value)">
+  <option value="">Select a page</option>
+  <option value="Home.html">Home</option>
+  <option value="Oasis.html">Games</option>
+  <option value="Community.html">Community Engagement</option>
+   <option value="Careers.html">Careers</option>
+</select>
+
+<script>
+  function redirectToPage(url) {
+    if (url !== "") {
+      window.location.href = url;
+    }
+  }
+  </script>
+    </nav>
+  </header>
+  <main>
+    <section>
+      <div class="battle-axes-hammers-page">
+        <img src="battle_axes_hammers.jpg" alt="Battle Axes/Hammers">
+        <div class="battle-axes-hammers-info">
+          <h2>Battle Axes/Hammers</h2>
+          <p>Description of the Battle Axes/Hammers goes here.</p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>Battle Axes/Hammers Skins</h2>
+      <div class="grid">
+        <div class="grid-item">
+          <img src="skin1.jpg" alt="Skin 1">
+          <div class="overlay">
+            <h3>Skin 1</h3>
+            <p>Type: Normal Skin</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Cost: Free</p>
+            <p>Trade Value: $50</p>
+          </div>
+        </div>
+        <div class="grid-item">
+          <img src="skin2.jpg" alt="Skin 2">
+          <div class="overlay">
+            <h3>Skin 2</h3>
+            <p>Type: Ranked PVP Skin</p>
+            <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <p>Cost: 500 Yen</p>
+            <p>Trade Value: $100</p>
+          </div>
+        </div>
+        <!-- Add more grid items as needed -->
+      </div>
+    </section>
+  </main>
+</body>
+</html>
